@@ -1,4 +1,4 @@
 import pandas as pd
-train = pd.read_csv(r'D:\研究生\Semester B\dissertation\AutoField\AutoField\avazu-ctr-prediction\train.csv')
-train_p = train[:1000]
-train_p.to_csv(r'D:\研究生\Semester B\dissertation\AutoField\AutoField\avazu-ctr-prediction\train_p.csv')
+test = pd.read_csv(r'D:\研究生\Semester B\dissertation\AutoField\AutoField\avazu-ctr-prediction\test.csv')
+test_p = test[:1000]
+test_p.to_csv(r'D:\研究生\Semester B\dissertation\AutoField\AutoField\avazu-ctr-prediction\test_p.csv')
