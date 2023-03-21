@@ -3,4 +3,4 @@ avazu-ctr-prediction
 .kaggle
 __pycache__
 .avazu
-models
+/models
