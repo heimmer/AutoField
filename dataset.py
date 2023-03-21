@@ -113,7 +113,7 @@ class AvazuDataset(Dataset):
                 if len(values) != self.NUM_FEATS + 2:
                     continue
                 np_array = np.zeros(self.NUM_FEATS + 1, dtype=np.uint32)
-                np_array[0] = int(values[1])
+                np_array[0] = int(float(values[1]))
                 for i in range(1, self.NUM_FEATS + 1):
                     np_array[i] = feat_mapper[i].get(values[i+1], defaults[i])
                 buffer.append((struct.pack('>I', item_idx), np_array.tobytes()))
