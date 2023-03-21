@@ -1,3 +1,6 @@
 avazu-ctr-prediction.zip
 avazu-ctr-prediction
 .kaggle
+__pycache__
+.avazu
+models
