@@ -253,9 +253,9 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset_name', default='movielens1M',
+    parser.add_argument('--dataset_name', default='avazu',
                         help='criteo, avazu, movielens1M, movielens20M, movielens1Mfield_noBinary, movielens1Mfield_noGenres, movielens1Mfield_all')
-    parser.add_argument('--dataset_path', default='ml-1m/train.txt',
+    parser.add_argument('--dataset_path', default='/root/AutoField/avazu/train',
                         help='criteo/train.txt, avazu/train, ml-1m/ratings.dat, ml-20m/rating.csv, ml-1m/train_field_no_binary.txt, ml-1m/train_field_no_genres.txt, ml-1m/train_field_all.txt')
     parser.add_argument('--model_name', default='MLP', help='lr, fm, hofm, ffm, fnn, wd, ipnn, opnn, dcn, fnfm, dfm, xdfm, afm, afi, afn, nfm, ncf')
     parser.add_argument('--mlp_dims', type=int, default=[16,8], help='original=16')

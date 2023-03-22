@@ -123,6 +123,7 @@ class AvazuDataset(Dataset):
                     buffer.clear()
             yield buffer
 
+aa = AvazuDataset('/root/AutoField/avazu/train.csv')
 
 class CriteoDataset(Dataset):
     """
